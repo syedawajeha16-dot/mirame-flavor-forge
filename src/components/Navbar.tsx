@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import mirameLogo from "@/assets/mirame-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -28,11 +29,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#home" className="font-heading text-2xl font-bold tracking-wide text-primary">
-          mirame
-          <span className="block text-[10px] font-body font-normal tracking-[0.3em] text-muted-foreground uppercase">
-            cafe & kitchen
-          </span>
+        <a href="#home" className="flex items-center">
+          <img src={mirameLogo} alt="Mirame Cafe & Kitchen" className="h-12 w-auto" />
         </a>
 
         {/* Desktop */}
