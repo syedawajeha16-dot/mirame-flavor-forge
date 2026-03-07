@@ -6,8 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <p className="font-heading text-2xl font-bold tracking-wide mb-2">mirame</p>
-            <p className="font-body text-xs tracking-[0.2em] uppercase opacity-60">cafe & kitchen</p>
+            <img src={mirameLogo} alt="Mirame Cafe & Kitchen" className="h-14 w-auto brightness-0 invert mb-2" />
             <p className="font-body text-sm opacity-70 mt-4 leading-relaxed">
               Where flavor meets comfort. A premium café experience in the heart of Chikkadpally, Hyderabad.
             </p>
