@@ -56,7 +56,7 @@ const MenuSection = () => {
                 )}
               </div>
               <p className="font-heading text-lg font-semibold text-accent whitespace-nowrap">
-                ₹{item.price}
+                {typeof item.price === "string" ? `₹${item.price}` : `₹${item.price}`}
               </p>
             </div>
           ))}
