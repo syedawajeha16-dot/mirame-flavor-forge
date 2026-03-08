@@ -38,7 +38,7 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-          <div className="order-1 md:order-2 overflow-hidden rounded-sm shadow-[var(--shadow-elevated)]">
+          <div ref={rightRef} className="scroll-reveal-right order-1 md:order-2 overflow-hidden rounded-sm shadow-[var(--shadow-elevated)]">
             <img
               src={cafeInterior}
               alt="Mirame cafe cozy interior with plants and artwork"

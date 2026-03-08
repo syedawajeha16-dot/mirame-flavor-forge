@@ -20,11 +20,14 @@ const images = [
   { src: biryani, alt: "Chicken dum biryani" },
 ];
 
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
 const GallerySection = () => {
+  const ref = useScrollReveal<HTMLDivElement>();
   return (
     <section id="gallery" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-14">
+        <div ref={ref} className="scroll-reveal text-center mb-14">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-accent font-medium mb-3">
             Visual Story
           </p>

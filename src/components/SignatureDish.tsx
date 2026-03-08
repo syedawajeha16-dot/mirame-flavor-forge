@@ -13,7 +13,7 @@ const SignatureDish = () => {
               loading="lazy"
             />
           </div>
-          <div className="space-y-6">
+          <div ref={rightRef} className="scroll-reveal-right space-y-6">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-accent font-medium">
               Chef's Signature
             </p>

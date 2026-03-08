@@ -12,7 +12,7 @@ const MenuSection = () => {
   return (
     <section id="menu" className="py-24 bg-card">
       <div className="container mx-auto px-6 max-w-5xl">
-        <div className="text-center mb-14">
+        <div ref={ref} className="scroll-reveal text-center mb-14">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-accent font-medium mb-3">
             Curated for You
           </p>
