@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import mirameLogo from "@/assets/mirame-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
