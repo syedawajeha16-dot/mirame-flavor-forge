@@ -1,4 +1,4 @@
-import mirameLogo from "@/assets/mirame-logo.png";
+
 
 const Footer = () => {
   return (
