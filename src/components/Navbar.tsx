@@ -28,8 +28,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#home" className="flex items-center">
-          <img src={mirameLogo} alt="Mirame Cafe & Kitchen" className="h-12 w-auto" />
+        <a href="#home" className="flex flex-col items-start leading-none">
+          <span className="text-2xl font-light text-foreground" style={{ fontFamily: "'Comfortaa', sans-serif" }}>mirame</span>
+          <span className="font-body text-[0.55rem] tracking-[0.25em] uppercase text-foreground/60">cafe & kitchen</span>
         </a>
 
         {/* Desktop */}
