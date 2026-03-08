@@ -19,12 +19,9 @@ const HeroSection = () => {
         <p className="font-body text-sm tracking-[0.4em] uppercase text-gold mb-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
           Chikkadpally, Hyderabad
         </p>
-        <img
-          src={mirameLogo}
-          alt="Mirame Cafe & Kitchen"
-          className="h-20 md:h-28 lg:h-36 w-auto mx-auto mb-6 brightness-0 invert animate-fade-in-up"
-          style={{ animationDelay: "0.4s" }}
-        />
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.4s", fontFamily: "'Comfortaa', sans-serif" }}>
+          mirame
+        </h1>
         <p className="font-heading text-lg md:text-xl text-primary-foreground/80 italic mb-2 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
           cafe & kitchen
         </p>
