@@ -1,4 +1,5 @@
 import heroCafe from "@/assets/hero-cafe.jpg";
+import mirameLogo from "@/assets/mirame-logo.png";
 
 const HeroSection = () => {
   return (
@@ -19,9 +20,12 @@ const HeroSection = () => {
         <p className="font-body text-sm tracking-[0.4em] uppercase text-gold mb-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
           Chikkadpally, Hyderabad
         </p>
-        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-          mirame
-        </h1>
+        <img
+          src={mirameLogo}
+          alt="Mirame Cafe & Kitchen"
+          className="h-20 md:h-28 lg:h-36 w-auto mx-auto mb-6 brightness-0 invert animate-fade-in-up"
+          style={{ animationDelay: "0.4s" }}
+        />
         <p className="font-heading text-lg md:text-xl text-primary-foreground/80 italic mb-2 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
           cafe & kitchen
         </p>
