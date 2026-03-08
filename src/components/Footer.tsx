@@ -1,4 +1,4 @@
-import mirameLogo from "@/assets/mirame-logo.png";
+
 
 const Footer = () => {
   return (
@@ -6,7 +6,10 @@ const Footer = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <img src={mirameLogo} alt="Mirame Cafe & Kitchen" className="h-14 w-auto brightness-0 invert mb-2" />
+            <div className="mb-2">
+              <span className="text-3xl font-light text-primary-foreground" style={{ fontFamily: "'Comfortaa', sans-serif" }}>mirame</span>
+              <p className="font-body text-[0.6rem] tracking-[0.25em] uppercase text-primary-foreground/60">cafe & kitchen</p>
+            </div>
             <p className="font-body text-sm opacity-70 mt-4 leading-relaxed">
               Where flavor meets comfort. A premium café experience in the heart of Chikkadpally, Hyderabad.
             </p>
