@@ -1,11 +1,15 @@
 import signaturePasta from "@/assets/signature-pasta.jpg";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const SignatureDish = () => {
+  const leftRef = useScrollReveal<HTMLDivElement>();
+  const rightRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section className="py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div className="overflow-hidden rounded-sm shadow-[var(--shadow-elevated)]">
+          <div ref={leftRef} className="scroll-reveal-left overflow-hidden rounded-sm shadow-[var(--shadow-elevated)]">
             <img
               src={signaturePasta}
               alt="Mirame Special Creamy Alfredo Pasta"

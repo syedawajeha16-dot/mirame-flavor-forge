@@ -5,7 +5,6 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const MenuSection = () => {
   const [activeCategory, setActiveCategory] = useState(menuCategories[0].category);
   const ref = useScrollReveal<HTMLDivElement>();
-  const [activeCategory, setActiveCategory] = useState(menuCategories[0].category);
 
   const active = menuCategories.find((c) => c.category === activeCategory)!;
 
