@@ -1,11 +1,15 @@
 import cafeInterior from "@/assets/cafe-interior.jpg";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const AboutSection = () => {
+  const leftRef = useScrollReveal<HTMLDivElement>();
+  const rightRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div className="space-y-6 order-2 md:order-1">
+          <div ref={leftRef} className="scroll-reveal-left space-y-6 order-2 md:order-1">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-accent font-medium">
               Our Story
             </p>
@@ -34,7 +38,7 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-          <div className="order-1 md:order-2 overflow-hidden rounded-sm shadow-[var(--shadow-elevated)]">
+          <div ref={rightRef} className="scroll-reveal-right order-1 md:order-2 overflow-hidden rounded-sm shadow-[var(--shadow-elevated)]">
             <img
               src={cafeInterior}
               alt="Mirame cafe cozy interior with plants and artwork"

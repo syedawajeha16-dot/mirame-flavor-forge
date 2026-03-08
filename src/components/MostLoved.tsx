@@ -1,6 +1,7 @@
 import cappuccino from "@/assets/cappuccino.jpg";
 import signaturePasta from "@/assets/signature-pasta.jpg";
 import chocolateLava from "@/assets/chocolate-lava.jpg";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const lovedItems = [
   { name: "Creamy Alfredo Pasta", image: signaturePasta, tag: "Signature" },
@@ -9,10 +10,11 @@ const lovedItems = [
 ];
 
 const MostLoved = () => {
+  const ref = useScrollReveal<HTMLDivElement>();
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-14">
+        <div ref={ref} className="scroll-reveal text-center mb-14">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-accent font-medium mb-3">
             Guest Favorites
           </p>
