@@ -1,5 +1,4 @@
 import heroCafe from "@/assets/hero-cafe.jpg";
-import mirameLogo from "@/assets/mirame-logo.png";
 
 const HeroSection = () => {
   return (
