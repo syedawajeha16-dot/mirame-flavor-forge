@@ -7,6 +7,7 @@ import mojito from "@/assets/mojito.jpg";
 import chickenTikka from "@/assets/chicken-tikka.jpg";
 import pizza from "@/assets/pizza.jpg";
 import biryani from "@/assets/biryani.jpg";
+import naan from "@/assets/naan.jpg";
 
 const images = [
   { src: heroCafe, alt: "Mirame cafe dining area" },
@@ -18,6 +19,7 @@ const images = [
   { src: pizza, alt: "Fresh margherita pizza" },
   { src: chocolateLava, alt: "Chocolate lava cake" },
   { src: biryani, alt: "Chicken dum biryani" },
+  { src: naan, alt: "Butter naan fresh from tandoor" },
 ];
 
 import { useScrollReveal } from "@/hooks/useScrollReveal";
